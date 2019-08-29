@@ -37,7 +37,7 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb" style="background-color: white">
                 <li class="breadcrumb-item"><a href="first_page.html" style="color:orange;">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Purchase Order</li>
+                <li class="breadcrumb-item active" aria-current="page">AR INVOICE</li>
             </ol>
         </nav>
         <div>
@@ -210,36 +210,37 @@
                 </div>
                 <div class="card">
                     <div class="card-body">
-                        <h2 class="card-title fsize-big" style="color:orange;">Sales Order</h2>
-                        <h5 class="fsize-medium"><b>Sales Order Details</b></h5>
+                        <h2 class="card-title fsize-big" style="color:orange;">AR INVOICE</h2>
+                        <h5 class="fsize-medium"><b>AR Details</b></h5>
                         <div class="row">
                             <div class="col form-group fsize-small">
-                                <label>Customer Order Date*</label>
+                                <label>Material Dispatch Date*</label>
                                 <input id="datepicker">
                                 <!--small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
                             </div>
                             <div class="col form-group">
-                                <label>Customer Committed Date*</label>
+                                <label>Expected Date*</label>
                                 <input id="datepicker1">
+                            </div>
+                            <div class="col form-group">
+                                <label for="inputState">Material Dispatched By*</label>
+                                <select id="inputState" class="form-control" required>
+                                    <option selected>JHIQWUIYE</option>
+                                    <option>...</option>
+                                </select>
                             </div>
                         </div>
                         <div class="row fsize-small">
-                            <div class="col form-group">
-                                <label>Currency*</label>
-                                <select id="inputState" class="form-control" required>
-                                    <option selected>INR</option>
-                                    <option>...</option>
-                                </select>
-                                <!--small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
-                            </div>
-                            <div class="col form-group">
-                                <label>Conversion Rate*</label>
-                                <select id="inputState" class="form-control" required>
-                                    <option selected>1</option>
-                                    <option>...</option>
-                                </select>
-                            </div>
+                                <div class="col form-group">
+                                    <label for="inputState">Box Number*</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="#8u38" required>
+                                </div>
+                                <div class="col form-group">
+                                    <label for="inputState">Box Dimension*</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="127x71" required>
+                                </div>
                         </div>
+                        
                     </div>
                 </div>
                 <button type="submit" class="btn my-primary">Submit</button>
